@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Library - PMCHRI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .textblack {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="img/pmchri-logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <!-- <a href="about.html" class="nav-item nav-link active">About</a> -->
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">About Library</span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="about.html" class="dropdown-item">About Us</a>
+                <a href="floor-plan.html" class="dropdown-item">Floor Plan</a>
+                <a href="working-hours.html" class="dropdown-item"
+                  >Central Library Working Hours</a
+                >
+                <a href="library-facilities-rules.html" class="dropdown-item"
+                  >Library Rules & Regulations</a
+                >
+                <a href="library-committee.html" class="dropdown-item"
+                  >Library Committee</a
+                >
+              </div>
+            </div>
+            <a href="collections.html" class="nav-item nav-link">Collections</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">Services </span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="circulation-section-policy.html" class="dropdown-item"
+                  >Circulation Section Policy</a
+                >
+                <a href="reference-service.html" class="dropdown-item"
+                  >Reference Services</a
+                >
+                <a href="reprography-services.html" class="dropdown-item"
+                  >Reprography Services</a
+                >
+                <a href="inter-library-loan.html" class="dropdown-item"
+                  >Inter Library Loan</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle"> E-Resource </span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="proquest.html" class="dropdown-item">Proquest</a>
+                <a href="national-journal-list.html" class="dropdown-item"
+                  >National Journal List</a
+                >
+                <a href="international-journal-list.html" class="dropdown-item"
+                  >International Journal List</a
+                >
+                <a href="general-magazine-list.html" class="dropdown-item"
+                  >General Magazine List</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle"> Free Resources </span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="e-journals-a-z.html" class="dropdown-item"
+                  >E- JOURNALS A - Z</a
+                >
+                <a href="e-books-final-a-z.html" class="dropdown-item"
+                  >E-BOOKS A-Z</a
+                >
+                <a href="e-databases-a-z.html" class="dropdown-item"
+                  >E-DATABASES A-Z</a
+                >
+                <a href="nptel-courses-medical-video.html" class="dropdown-item"
+                  >NPTEL COURSES - MEDICAL VIDEO</a
+                >
+              </div>
+            </div>
+            <a href="digital-library.html" class="nav-item nav-link"
+              >Digital Library</a
+            >
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">Useful Links </span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" class="dropdown-item"
+                  >PUBMED</a
+                >
+                <a href="https://www.medline.eu/" class="dropdown-item"
+                  >MEDLINE</a
+                >
+                <a href="https://medlineplus.gov/" class="dropdown-item"
+                  >MEDLINE PLUS</a
+                >
+                <a href="https://www.medicinenet.com/" class="dropdown-item"
+                  >MEDLARS</a
+                >
+                <a href="https://ndl.iitkgp.ac.in/" class="dropdown-item"
+                  >NATIONAL DIGITAL LIBRARY</a
+                >
+                <a href="https://tamildigitallibrary.in/" class="dropdown-item"
+                  >TAMILNADU DIGITAL LIBRARY</a
+                >
+                <a href="https://www.tnmgrmu.ac.in/" class="dropdown-item"
+                  >TN MGR MEDICAL UNIVERSITY</a
+                >
+                <a href="https://www.nmc.org.in/" class="dropdown-item"
+                  >NATIONAL MEDICAL COMMISION</a
+                >
+                <a
+                  href="https://academic.oup.com/journals/pages/medicine_and_health"
+                  class="dropdown-item"
+                  >OXFORD ACADEMIC JOURNALS</a
+                >
+                <a href="https://welib.org/" class="dropdown-item">E BOOKS</a>
+                <a
+                  href="https://www.tnmgrmu.ac.in/index.php/library/e-questions/medical-e-questions.html"
+                  class="dropdown-item"
+                  >QUESTION BANK</a
+                >
+              </div>
+            </div>
+            <a href="contact-us.html" class="nav-item nav-link">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Start -->
+      <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px">
+          <h4
+            class="text-white display-4 mb-4 wow fadeInDown"
+            data-wow-delay="0.1s"
+          >
+            Nptel Courses - Medical Video
+          </h4>
+          <ol
+            class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown"
+            data-wow-delay="0.3s"
+          >
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+            <li class="breadcrumb-item active text-primary">
+              Nptel Courses - Medical Video
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Header End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid team py-5">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <!-- <h4 class="text-primary">Central Library Working Hours</h4> -->
+          <h1 class="display-5 mb-4">Nptel Courses - Medical Video</h1>
+          <!-- <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    </p> -->
+        </div>
+        <div
+          class="row g-4 justify-content-center wow fadeInUp"
+          data-wow-delay="0.29s"
+        >
+          <div class="col-10">
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped table-hover">
+                <thead>
+                  <tr class="table-secondary">
+                    <th scope="col" class="m-auto">S. NO</th>
+                    <th scope="col">VIDEO COURSE NAME</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104042/L01.html"
+                        target="_blank"
+                        >Animal Physiology</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104058/L01.html"
+                        target="_blank"
+                        >NOC:Animal Physiology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106051/L01.html"
+                        target="_blank"
+                        >NOC:Biostatistics and Design of Experiments
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104052/L01.html"
+                        target="_blank"
+                        >NOC:Human Molecular Genetics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101056/L01.html"
+                        target="_blank"
+                        >NOC:Introduction to Biostatistics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106057/L01.html"
+                        target="_blank"
+                        >NOC:Medical Biomaterials
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104062/L01.html"
+                        target="_blank"
+                        >NOC:Bioelectrochemistry
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106087/L01.html"
+                        target="_blank"
+                        >NOC:Biochemistry (IITM)
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102105089/L01.html"
+                        target="_blank"
+                        >NOC:Fundamentals of Protein Chemistry
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102108086/L01.html"
+                        target="_blank"
+                        >NOC:Cell Biology: Cellular Organization, Division and
+                        Processes
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106070/L01.html"
+                        target="_blank"
+                        >NOC:Computer Aided Drug Design
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106066/L01.html"
+                        target="_blank"
+                        >NOC:Demystifying the Brain
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102108077/L01.html"
+                        target="_blank"
+                        >NOC:Drug Delivery: Principles and Engineering
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102105087/L01.html"
+                        target="_blank"
+                        >NOC:Environmental Chemistry and Microbiology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102107028/L01.html"
+                        target="_blank"
+                        >Analytical Technologies in Biotechnology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104043/L01.html"
+                        target="_blank"
+                        >Bio electricity
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101003/L01.html"
+                        target="_blank"
+                        >Biomathematics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106022/L01.html"
+                        target="_blank"
+                        >Downstream Processing
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102102033/L01.html"
+                        target="_blank"
+                        >Enzyme Science and Engineering
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101072/L01.html"
+                        target="_blank"
+                        >NOC:Applications of Interactomics using Genomics and
+                        Proteomics Technologies
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102105064/L01.html"
+                        target="_blank"
+                        >NOC:Aspects Of Biochemical Engineering
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102103091/L01.html"
+                        target="_blank"
+                        >NOC:Basics of Biology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104063/L01.html"
+                        target="_blank"
+                        >NOC:Bioenergetics Of Life Processes
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104057/L01.html"
+                        target="_blank"
+                        >NOC:Bioenergy
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101068/L01.html"
+                        target="_blank"
+                        >NOC:Bioengineering: An Interface with Biology and
+                        Medicine
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106065/L01.html"
+                        target="_blank"
+                        >NOC:BioInformatics:Algorithms and Applications
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102103086/L01.html"
+                        target="_blank"
+                        >NOC:Biointerface Engineering
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102107058/L01.html"
+                        target="_blank"
+                        >NOC:Biomedical Nanotechnology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>29</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102105068/L01.html"
+                        target="_blank"
+                        >NOC:Biomicrofluidics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106086/L01.html"
+                        target="_blank"
+                        >NOC:Bioreactor Design and Analysis
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>31</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106053/L01.html"
+                        target="_blank"
+                        >NOC:Bioreactors
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>32</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104059/L01.html"
+                        target="_blank"
+                        >NOC:Cell Culture Technologies
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>33</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106068/L01.html"
+                        target="_blank"
+                        >NOC:Computational Systems Biology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>34</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104086/L01.html"
+                        target="_blank"
+                        >NOC:Conservation Economics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>35</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104088/L01.html"
+                        target="_blank"
+                        >NOC:Conservation Geography
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>36</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102103092/L01.html"
+                        target="_blank"
+                        >NOC:Data Analysis for Biologists
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>37</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102105088/L01.html"
+                        target="_blank"
+                        >NOC:Environmental Biotechnology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>38</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102103083/L01.html"
+                        target="_blank"
+                        >NOC:Experimental Biotechnology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>39</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104060/L01.html"
+                        target="_blank"
+                        >NOC:Forest Biometry
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>40</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104082/L01.html"
+                        target="_blank"
+                        >NOC:Forests and their Management
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>41</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104056/L01.html"
+                        target="_blank"
+                        >NOC:Functional Genomics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>42</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102108078/L01.html"
+                        target="_blank"
+                        >NOC:Fundamentals of micro and nanofabrication
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>43</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102103074/L01.html"
+                        target="_blank"
+                        >NOC:Genetic Engineering: Theory and Application
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>44</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102105083/L01.html"
+                        target="_blank"
+                        >NOC:Immunology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>45</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102105058/L01.html"
+                        target="_blank"
+                        >NOC:Industrial Biotechnology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>46</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101082/L01.html"
+                        target="_blank"
+                        >NOC:Interactomics: Basics and Applications
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>47</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101054/L01.html"
+                        target="_blank"
+                        >NOC:Interactomics:Protein Arrays and Label-free
+                        Biosensors
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>48</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102105090/L01.html"
+                        target="_blank"
+                        >NOC:Introduction to Biomedical Imaging Systems
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>49</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106084/L01.html"
+                        target="_blank"
+                        >NOC:Introduction to Developmental Biology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>50</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102103056/L01.html"
+                        target="_blank"
+                        >NOC:Introduction to Dynamical Models in Biology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>51</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101058/L01.html"
+                        target="_blank"
+                        >NOC:Introduction to Mechanobiology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>52</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104061/L01.html"
+                        target="_blank"
+                        >NOC:Introduction To Professional and Scientific
+                        Communication
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>53</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101076/L01.html"
+                        target="_blank"
+                        >NOC:Introduction to Proteogenomics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>54</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101055/L01.html"
+                        target="_blank"
+                        >NOC:Introduction to Proteomics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>55</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101067/L01.html"
+                        target="_blank"
+                        >NOC:Introductory Mathematical Methods for Biologists
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>56</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102108071/L01.html"
+                        target="_blank"
+                        >NOC:Learning about Learning: A Course on Neurobiology
+                        of Learning and Memory
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>57</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101050/L01.html"
+                        target="_blank"
+                        >NOC:Mass spectrometry based proteomics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>58</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101091/L01.html"
+                        target="_blank"
+                        >NOC:Maternal Infant Young Child Nutrition
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>59</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104069/L01.html"
+                        target="_blank"
+                        >NOC:Nanotechnology in Agriculture
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>60</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102108082/L01.html"
+                        target="_blank"
+                        >NOC:Optical Spectroscopy and Microscopy: Fundamentals
+                        of Optical Measurements and Instrumentation
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>61</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106080/L01.html"
+                        target="_blank"
+                        >NOC:Plant Cell Bioprocessing
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>62</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102107075/L01.html"
+                        target="_blank"
+                        >NOC:Plant Developmental Biology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>63</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106048/L01.html"
+                        target="_blank"
+                        >NOC:Principles of Downstream techniques in Bioprocess
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>64</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101049/L01.html"
+                        target="_blank"
+                        >NOC:Proteins and Gel-Based Proteomics
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>65</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102107086/L01.html"
+                        target="_blank"
+                        >NOC:Structural Biology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>66</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106082/L01.html"
+                        target="_blank"
+                        >NOC:Thermodynamics for Biological Systems: Classical
+                        and Statistical Aspect
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>67</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106081/L01.html"
+                        target="_blank"
+                        >NOC:Tissue engineering
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>68</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102106083/L01.html"
+                        target="_blank"
+                        >NOC:Transport Phenomena in Biological Systems
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>69</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104073/L01.html"
+                        target="_blank"
+                        >NOC:Wild Life Ecology
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>70</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102104068/L01.html"
+                        target="_blank"
+                        >NOC:WildLife Conservation
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>71</td>
+                    <td>
+                      <a
+                        href="https://www.digimat.in/nptel/courses/video/102101007/L01.html"
+                        target="_blank"
+                        >Proteomics: Principles and Techniques
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div
+        class="container py-5 border-start-0 border-end-0"
+        style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08)"
+      >
+        <div class="row g-5 justify-content-center">
+          <div class="col-md-12 col-lg-12 col-xl-3">
+            <div class="footer-item"></div>
+            <h4 class="text-white mb-4 text-center">Share</h4>
+            <div class="d-flex justify-content-center">
+              <a
+                class="btn btn-primary btn-sm-square rounded-circle me-3"
+                href="https://www.facebook.com/people/Pmchri_official_/100083171000446/"
+                target="_blank"
+                ><i class="fab fa-facebook-f text-white"></i
+              ></a>
+              <a
+                class="btn btn-primary btn-sm-square rounded-circle me-3"
+                href="https://twitter.com/PMedicalcollege"
+                target="_blank"
+                ><i class="fab fa-twitter text-white"></i
+              ></a>
+              <a
+                class="btn btn-primary btn-sm-square rounded-circle me-3"
+                href="https://www.instagram.com/pmchri_official_/?hl=en"
+                target="_blank"
+                ><i class="fab fa-instagram text-white"></i
+              ></a>
+              <a
+                class="btn btn-primary btn-sm-square rounded-circle me-0"
+                href="https://www.linkedin.com/company/82638986/admin/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in text-white"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-12 text-center mb-md-0 text-primary">
+            &copy; <span id="year"> </span> All Rights Reserved. Panimalar
+            Medical College Hospital & Research Institute
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->    
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

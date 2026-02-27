@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Library - PMCHRI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .fa-ul {
+        list-style-type: none;
+        margin-left: 2.5em;
+        padding-left: 0;
+        line-height: 2.2rem !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-flex flex-wrap">
+            <a href="#" class="text-muted small me-4"
+              ><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A
+              Location</a
+            >
+            <a href="tel:+01234567890" class="text-muted small me-4"
+              ><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a
+            >
+            <a href="mailto:example@gmail.com" class="text-muted small me-0"
+              ><i class="fas fa-envelope text-primary me-2"></i
+              >Example@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a href="#"
+              ><small class="me-3 text-dark"
+                ><i class="fa fa-user text-primary me-2"></i>Register</small
+              ></a
+            >
+            <a href="#"
+              ><small class="me-3 text-dark"
+                ><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small
+              ></a
+            >
+            <div class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle text-dark"
+                data-bs-toggle="dropdown"
+                ><small
+                  ><i class="fa fa-home text-primary me-2"></i> My
+                  Dashboard</small
+                ></a
+              >
+              <div class="dropdown-menu rounded">
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-user-alt me-2"></i> My Profile</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-comment-alt me-2"></i> Inbox</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-bell me-2"></i> Notifications</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-cog me-2"></i> Account Settings</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-power-off me-2"></i> Log Out</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <!-- <h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Stocker</h1> -->
+          <img src="img/pmchri-logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <!-- <a href="about.html" class="nav-item nav-link active">About</a> -->
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">About Library</span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="about.html" class="dropdown-item">About Us</a>
+                <a href="floor-plan.html" class="dropdown-item">Floor Plan</a>
+                <a href="working-hours.html" class="dropdown-item"
+                  >Central Library Working Hours</a
+                >
+                <a href="library-facilities-rules.html" class="dropdown-item"
+                  >Library Rules & Regulations</a
+                >
+                <a href="library-committee.html" class="dropdown-item"
+                  >Library Committee</a
+                >
+              </div>
+            </div>
+            <a href="collections.html" class="nav-item nav-link">Collections</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">Services </span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="circulation-section-policy.html" class="dropdown-item"
+                  >Circulation Section Policy</a
+                >
+                <a href="reference-service.html" class="dropdown-item"
+                  >Reference Services</a
+                >
+                <a href="reprography-services.html" class="dropdown-item"
+                  >Reprography Services</a
+                >
+                <a href="inter-library-loan.html" class="dropdown-item"
+                  >Inter Library Loan</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle"> E-Resource </span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="proquest.html" class="dropdown-item">Proquest</a>
+                <a href="national-journal-list.html" class="dropdown-item"
+                  >National Journal List</a
+                >
+                <a href="international-journal-list.html" class="dropdown-item"
+                  >International Journal List</a
+                >
+                <a href="general-magazine-list.html" class="dropdown-item"
+                  >General Magazine List</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle"> Free Resources </span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="e-journals-a-z.html" class="dropdown-item"
+                  >E- JOURNALS A - Z</a
+                >
+                <a href="e-books-final-a-z.html" class="dropdown-item"
+                  >E-BOOKS A-Z</a
+                >
+                <a href="e-databases-a-z.html" class="dropdown-item"
+                  >E-DATABASES A-Z</a
+                >
+                <a href="nptel-courses-medical-video.html" class="dropdown-item"
+                  >NPTEL COURSES - MEDICAL VIDEO</a
+                >
+              </div>
+            </div>
+            <a href="digital-library.html" class="nav-item nav-link"
+              >Digital Library</a
+            >
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">Useful Links </span>
+              </a>
+              <div class="dropdown-menu m-0">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" class="dropdown-item"
+                  >PUBMED</a
+                >
+                <a href="https://www.medline.eu/" class="dropdown-item"
+                  >MEDLINE</a
+                >
+                <a href="https://medlineplus.gov/" class="dropdown-item"
+                  >MEDLINE PLUS</a
+                >
+                <a href="https://www.medicinenet.com/" class="dropdown-item"
+                  >MEDLARS</a
+                >
+                <a href="https://ndl.iitkgp.ac.in/" class="dropdown-item"
+                  >NATIONAL DIGITAL LIBRARY</a
+                >
+                <a href="https://tamildigitallibrary.in/" class="dropdown-item"
+                  >TAMILNADU DIGITAL LIBRARY</a
+                >
+                <a href="https://www.tnmgrmu.ac.in/" class="dropdown-item"
+                  >TN MGR MEDICAL UNIVERSITY</a
+                >
+                <a href="https://www.nmc.org.in/" class="dropdown-item"
+                  >NATIONAL MEDICAL COMMISION</a
+                >
+                <a
+                  href="https://academic.oup.com/journals/pages/medicine_and_health"
+                  class="dropdown-item"
+                  >OXFORD ACADEMIC JOURNALS</a
+                >
+                <a href="https://welib.org/" class="dropdown-item">E BOOKS</a>
+                <a
+                  href="https://www.tnmgrmu.ac.in/index.php/library/e-questions/medical-e-questions.html"
+                  class="dropdown-item"
+                  >QUESTION BANK</a
+                >
+              </div>
+            </div>
+            <a href="contact-us.html" class="nav-item nav-link">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Start -->
+      <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px">
+          <h4
+            class="text-white display-4 mb-4 wow fadeInDown"
+            data-wow-delay="0.1s"
+          >
+            Collections
+          </h4>
+          <ol
+            class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown"
+            data-wow-delay="0.3s"
+          >
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+            <li class="breadcrumb-item active text-primary">Collections</li>
+          </ol>
+        </div>
+      </div>
+      <!-- Header End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid feature py-5">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto py-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 1024px"
+        >
+          <!-- <h4 class="text-primary">Our Features</h4> -->
+          <h1 class="display-5 my-4">Collections</h1>
+          <h3 class="mt-5">
+            PANIMALAR MEDICAL COLLEGE HOSPITAL & RESEARCH INSTITUTE
+          </h3>
+          <h5>
+            CENTRAL LIBRARY/DEPT. LIBRARY/ADDITIONAL LIBRARY (UG / M.B.B.S.)
+          </h5>
+          <h3>LIBRARY STATUS REPORTS - (2024-25)</h3>
+          <!-- <p class="mb-0 textalju">
+            A Digital Library is a special library with a focused collection of
+            digital objects that can include text, visual material, audio
+            material, video material, stored as electronic media formats along
+            with means for organizing, storing, and retrieving the files and
+            media contained in the library collection. Digital libraries can
+            vary immensely in size and scope, and can be maintained by
+            individuals, organizations, or affiliated with established physical
+            library buildings or institutions, or with academic institutions.
+            The electronic content may be stored locally, or accessed remotely
+            via computer networks. An electronic library is a type of
+            information retrieval system.
+          </p> -->
+        </div>
+        <div class="row g-4 mt-2">
+          <div
+            class="col-md-6 col-lg-6 col-xl-6 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>TOTAL NO. OF VOLUMES</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">11796</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-6 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>TOTAL NO. OF TITLES</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">4493</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid team py-3">
+      <div class="container py-3">
+        <div
+          class="row g-4 justify-content-center wow fadeInUp"
+          data-wow-delay="0.29s"
+        >
+          <div class="col-10">
+            <div class="table-responsive">
+              <table
+                class="table table-bordered table-striped table-hover align-middle text-center"
+              >
+                <thead class="table-dark">
+                  <tr>
+                    <th rowspan="2">S.No</th>
+                    <th rowspan="2">Department</th>
+                    <th rowspan="2">Foreign</th>
+                    <th rowspan="2">National</th>
+                    <th colspan="3">Journal</th>
+                  </tr>
+                  <tr>
+                    <!-- <th>Foreign</th>
+                    <th>National</th> -->
+                    <th>Foreign</th>
+                    <th>National</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td class="text-left">Anatomy</td>
+                    <td>1052</td>
+                    <td>251</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>02</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Physiology</td>
+                    <td>602</td>
+                    <td>162</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>02</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Biochemistry</td>
+                    <td>639</td>
+                    <td>175</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>02</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Pathology</td>
+                    <td>484</td>
+                    <td>225</td>
+                    <td>-</td>
+                    <td>01</td>
+                    <td>01</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Microbiology</td>
+                    <td>838</td>
+                    <td>238</td>
+                    <td>-</td>
+                    <td>02</td>
+                    <td>02</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Pharmacology</td>
+                    <td>516</td>
+                    <td>183</td>
+                    <td>-</td>
+                    <td>02</td>
+                    <td>02</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Forensic Medicine & Toxicology</td>
+                    <td>608</td>
+                    <td>138</td>
+                    <td>-</td>
+                    <td>01</td>
+                    <td>01</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Community Medicine</td>
+                    <td>526</td>
+                    <td>188</td>
+                    <td>-</td>
+                    <td>02</td>
+                    <td>02</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>General Medicine</td>
+                    <td>2357</td>
+                    <td>1048</td>
+                    <td>04</td>
+                    <td>09</td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Pediatrics</td>
+                    <td>753</td>
+                    <td>299</td>
+                    <td>02</td>
+                    <td>06</td>
+                    <td>08</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>General Surgery</td>
+                    <td>2817</td>
+                    <td>1357</td>
+                    <td>07</td>
+                    <td>13</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Obstetrics & Gynecology</td>
+                    <td>537</td>
+                    <td>200</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>05</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>General</td>
+                    <td>67</td>
+                    <td>29</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+                <tfoot class="table-secondary fw-bold">
+                  <tr>
+                    <td colspan="2">TOTAL</td>
+                    <td>11796</td>
+                    <td>4493</td>
+                    <td>18</td>
+                    <td>42</td>
+                    <td>60</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid feature py-3">
+      <div class="container py-3">
+        <div class="row g-4 mt-2 justify-content-center">
+          <div
+            class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>E-JOURNALS (PROQUEST)</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">4559</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>E-BOOKS (PROQUEST)</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">17928</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>NON-BOOKS MATERIALS</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">144</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>MAGAZINE</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">26</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>COMPUTERS</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">75</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>NEWSPAPERS</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">10</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-4 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>TOTAL VALUE</h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">
+                  3, 82,02,657
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div
+        class="container py-5 border-start-0 border-end-0"
+        style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08)"
+      >
+        <div class="row g-5 justify-content-center">
+          <div class="col-md-12 col-lg-12 col-xl-3">
+            <div class="footer-item"></div>
+            <h4 class="text-white mb-4 text-center">Share</h4>
+            <div class="d-flex justify-content-center">
+              <a
+                class="btn btn-primary btn-sm-square rounded-circle me-3"
+                href="https://www.facebook.com/people/Pmchri_official_/100083171000446/"
+                target="_blank"
+                ><i class="fab fa-facebook-f text-white"></i
+              ></a>
+              <a
+                class="btn btn-primary btn-sm-square rounded-circle me-3"
+                href="https://twitter.com/PMedicalcollege"
+                target="_blank"
+                ><i class="fab fa-twitter text-white"></i
+              ></a>
+              <a
+                class="btn btn-primary btn-sm-square rounded-circle me-3"
+                href="https://www.instagram.com/pmchri_official_/?hl=en"
+                target="_blank"
+                ><i class="fab fa-instagram text-white"></i
+              ></a>
+              <a
+                class="btn btn-primary btn-sm-square rounded-circle me-0"
+                href="https://www.linkedin.com/company/82638986/admin/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in text-white"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-12 text-center mb-md-0 text-primary">
+            &copy; <span id="year"> </span> All Rights Reserved. Panimalar
+            Medical College Hospital & Research Institute
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

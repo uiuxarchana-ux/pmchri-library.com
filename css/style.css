@@ -327,7 +327,7 @@
   bottom: 0;
   padding-top: 120px;
   /* background: rgba(5, 5, 5, .6); */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(5, 5, 5, 0.8));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(5, 5, 5, 0.2));
   display: flex;
   align-items: center;
 }
@@ -949,3 +949,4 @@
   padding: 10px 20px;
   margin-top: 8px;
 }
+

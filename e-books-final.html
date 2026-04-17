@@ -36,8 +36,35 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
     <style>
-      .textblack {
-        color: black;
+      /* .fa-ul {
+        list-style-type: none;
+        margin-left: 2.5em;
+        padding-left: 0;
+        line-height: 2.2rem !important;
+      }
+      .btn-white {
+        background: #fff;
+        color: #00d084;
+        font-size: 23px;
+        padding: 10px 20px;
+        margin-top: 8px;
+      } */
+
+      .fa-ul {
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      .fa-ul li {
+        position: relative;
+        padding-left: 2px;
+        text-align: left;
+      }
+
+      .fa-ul li i {
+        position: absolute;
+        left: 0;
+        top: 4px;
       }
     </style>
   </head>
@@ -57,6 +84,70 @@
       </div>
     </div>
     <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-flex flex-wrap">
+            <a href="#" class="text-muted small me-4"
+              ><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A
+              Location</a
+            >
+            <a href="tel:+01234567890" class="text-muted small me-4"
+              ><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a
+            >
+            <a href="mailto:example@gmail.com" class="text-muted small me-0"
+              ><i class="fas fa-envelope text-primary me-2"></i
+              >Example@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a href="#"
+              ><small class="me-3 text-dark"
+                ><i class="fa fa-user text-primary me-2"></i>Register</small
+              ></a
+            >
+            <a href="#"
+              ><small class="me-3 text-dark"
+                ><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small
+              ></a
+            >
+            <div class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle text-dark"
+                data-bs-toggle="dropdown"
+                ><small
+                  ><i class="fa fa-home text-primary me-2"></i> My
+                  Dashboard</small
+                ></a
+              >
+              <div class="dropdown-menu rounded">
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-user-alt me-2"></i> My Profile</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-comment-alt me-2"></i> Inbox</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-bell me-2"></i> Notifications</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-cog me-2"></i> Account Settings</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-power-off me-2"></i> Log Out</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
@@ -206,7 +297,7 @@
             class="text-white display-4 mb-4 wow fadeInDown"
             data-wow-delay="0.1s"
           >
-            About Us
+            Digital Library
           </h4>
           <ol
             class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown"
@@ -214,7 +305,7 @@
           >
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
-            <li class="breadcrumb-item active text-primary">About</li>
+            <li class="breadcrumb-item active text-primary">Digital Library</li>
           </ol>
         </div>
       </div>
@@ -222,808 +313,184 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Team Start -->
-    <div class="container-fluid team py-5">
-      <div class="container py-5">
+    <!-- Features Start -->
+    <div class="container-fluid feature py-5">
+      <div class="container pb-5">
         <div
           class="text-center mx-auto pb-5 wow fadeInUp"
           data-wow-delay="0.2s"
-          style="max-width: 800px"
+          style="max-width: 1024px"
         >
-          <!-- <h4 class="text-primary">Central Library Working Hours</h4> -->
-          <h1 class="display-5 mb-4">E Books</h1>
-          <!-- <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p> -->
+          <!-- <h4 class="text-primary">Our Features</h4> -->
+          <h1 class="display-5 mb-4">DIGITAL LIBRARY</h1>
+          <p class="mb-0 textalju">
+            A digital library is a special library with a focused collection of
+            digital objects that can include text, visual material, audio
+            material, and video material stored as electronic media formats,
+            along with means for organizing, storing, and retrieving the files
+            and media contained in the library collection. Digital libraries can
+            vary immensely in size and scope, and can be maintained by
+            individuals or organizations, or be affiliated with established
+            physical library buildings or institutions, or with academic
+            institutions. The electronic content may be stored locally or
+            accessed remotely via computer networks. An electronic library is a
+            type of information retrieval system.
+          </p>
         </div>
-        <div
-          class="row g-4 justify-content-center wow fadeInUp"
-          data-wow-delay="0.29s"
-        >
-          <div class="col-10 bg-light rounded">
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"A"</h5>
+        <div class="row g-4 mt-4">
+          <div class="row">
+            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+              <h1 class="display-5 mb-4">DIGITAL LIBRARY COLLECTIONS</h1>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>
+                Total No of <br />
+                E- books
+              </h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">17968</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>
+                Total No of <br />
+                E- journals
+              </h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">5823</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>
+                Total No of <br />
+                Medical Videos
+              </h4>
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">200</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item p-4">
+              <h4>
+                Total No of <br />
+                computers
+              </h4>
+              <!-- <div class="px-4 py-3 badge bg-white mt-3">
+                <h4 class="text-primary">075</h4>
+              </div> -->
+              <div class="head-btn">
+                <button type="button" class="btn btn-white">075</button>
+              </div>
             </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=addic"
-                  >Addiction&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=hiv">AIDS</a>
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=aller"
-                  >Allergy&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=anato"
-                  >Anatomy&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=anest"
-                  >Anesthesiology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"B"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=bioch"
-                  >Biochemistry</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=bioin"
-                  >Bioinformatics&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=biolo"
-                  >Biology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=biote"
-                  >Biotechnology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"C"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=cardi"
-                  >Cardiology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=carvd"
-                  >Cardiovascular Diseases</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=caree"
-                  >Careers</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=clima"
-                  >Climate and Health</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=gener"
-                  >Clinical Guidelines&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=clipr"
-                  >Clinical Procedures&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=critc"
-                  >Critical Care&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"D"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=denti"
-                  >Dentistry</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=derma"
-                  >Dermatology&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=imagi"
-                  >Diagnostic Imaging&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=dicti"
-                  >Dictionary&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"E"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=meded"
-                  >Education&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=embry"
-                  >Embryology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=emerg"
-                  >Emergency Medicine&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=endoc"
-                  >Endocrinology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=epide"
-                  >Epidemiology&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=ethic"
-                  >Ethics&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"F"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=famil"
-                  >Family Practice&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"G"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=gastr"
-                  >Gastroenterology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=genet"
-                  >Genetics&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=gbook"
-                  >General Textbooks&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=geria"
-                  >Geriatrics&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=gynec"
-                  >Gynecology&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"H"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=hemat"
-                  >Hematology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=histo"
-                  >Histology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=histm"
-                  >History of Medicine&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"I"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=immun"
-                  >Immunology&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=infd"
-                  >Infectious Diseases&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=inter"
-                  >Internal Medicine&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"M"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=medwr"
-                  >Medical Writing&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=micro"
-                  >Microbiology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=milme"
-                  >Military Medicine</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=molbi"
-                  >Molecular Biology&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=muscu"
-                  >Musculoskeletal Disorders</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"N"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=natsc"
-                  >Natural Science&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=nephr"
-                  >Nephrology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=neuch"
-                  >Neurochemistry&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=neuro"
-                  >Neurology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=neusc"
-                  >Neuroscience</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=nsurg"
-                  >Neurosurgery</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=nutri"
-                  >Nutrition</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"O"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=obste"
-                  >Obstetrics</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=oncol"
-                  >Oncology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=ophth"
-                  >Ophthalmology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=ortsu"
-                  >Orthopedic Surgery</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=otola"
-                  >Otolaryngology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"P"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=patho"
-                  >Pathology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=patca"
-                  >Patient Care&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=pedia"
-                  >Pediatrics</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=perca"
-                  >Perioperative Care&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=pharm"
-                  >Pharmacology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=phyex"
-                  >Physical Examination&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=physi"
-                  >Physiology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=psurg"
-                  >Plastic Surgery&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=poiso"
-                  >Poisoning</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=prima"
-                  >Primary Care&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=psych"
-                  >Psychiatry</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=psana"
-                  >Psychoanalysis</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=psyco"
-                  >Psychology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=pubhe"
-                  >Public Health&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=pneum"
-                  >Pulmonology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"R"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=radia"
-                  >Radiation</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=radio"
-                  >Radiology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=rehab"
-                  >Rehabilitation</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=rheum"
-                  >Rheumatology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"S"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=socio"
-                  >Sociology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=sport"
-                  >Sports Medicine&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=stats"
-                  >Statistics</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=stemc"
-                  >Stem Cells&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=surge"
-                  >Surgery</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"T"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=tsurg"
-                  >Thoracic Surgery&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=toxic"
-                  >Toxicology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=trans"
-                  >Transplantation</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=traum"
-                  >Traumatology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=trave"
-                  >Travel Medicine&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"U"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=urolo"
-                  >Urology</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5 class="text-center">"V"</h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=vassu"
-                  >Vascular Surgery&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=veter"
-                  >Veterinary Medicine&nbsp;</a
-                >
-              </h5>
-            </div>
-
-            <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-                <a href="http://www.freebooks4doctors.com/f.php?f=virol"
-                  >Virology</a
-                >
-              </h5>
-            </div>
-
-            <!-- <div class="bg-white p-3 mx-3 my-4 rounded">
-              <h5>
-
-              </h5>
-            </div>                    -->
           </div>
         </div>
       </div>
     </div>
-    <!-- Team End -->
+    <!-- Features End -->
+
+    <div class="container feature py-3 mb-5">
+      <div class="row g-5 align-items-center justify-content-center">
+        <div class="col-md-12 wow fadeInRight" data-wow-delay="0.4s">
+          <div class="tab-content">
+            <div id="collapseOne" class="tab-pane fade show p-0 active">
+              <div class="row g-4">
+                <div class="col-md-12">
+                  <h1 class="display-5 mb-4 text-center">
+                    DIGITAL LIBRARY RULES AND REGULATIONS
+                  </h1>
+                  <ul class="fa-ul text-start">
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-angle-double-right"></i
+                      ></span>
+                      The digital library of Panimalar Medical College Hospital
+                      and Research Institute has a good collection of e-books
+                      and e-journals for its members. The library provides
+                      internet browsing and e-services for its users.
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-angle-double-right"></i
+                      ></span>
+                      Online chatting, playing games, and browsing for social
+                      networking sites are strictly prohibited.
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-angle-double-right"></i
+                      ></span>
+                      Changing the settings or display of the computers in the
+                      library is not allowed. Readers are instructed not to
+                      remove or unplug computer cable connections, network
+                      cables, and other peripherals/accessories in the library.
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-angle-double-right"></i>
+                      </span>
+                      The electronic resources available in the PMCHRI library
+                      are governed by license agreements. Each user is
+                      responsible for ensuring that he/she uses these products
+                      only for non-commercial, educational, scholarly, or
+                      research use without systematically downloading and
+                      distributing portions of information.
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-angle-double-right"></i>
+                      </span>
+                      Users are advised to make use of these facilities only to
+                      support their academic and research activities.
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-angle-double-right"></i>
+                      </span>
+                      The chief librarian is provided with the right to stop
+                      extending this facility to a person found misusing it,
+                      apart from initiating action as per the rules provided by
+                      the PMCHRI authorities.
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-angle-double-right"></i>
+                      </span>
+                      The library provides printing facilities to its readers on
+                      all working days. If the purpose of printing is found to
+                      be personal work, Rs. 2/- per page will be charged.
+                      (Please send the documents to the following email ID:
+                      <a href="mailto:pmchrilibrary@gmail.com"
+                        >pmchrilibrary@gmail.com</a
+                      >
+                      )
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
